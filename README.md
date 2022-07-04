@@ -30,4 +30,7 @@ You may want to recompile/rebuild if not working with the binaries here.
 
 You will want to run either noconnection config or MultipleGymsOne config. MultipleGyms is a postponed idea. Make sure to put 5555 port at TrivialRL if you will try General config.
 
+Extra:
+15. If you want to use the DQN agent, you also will need to pip install stable_baselines3 at you venv. Also, you will need to open your venv libs, find veinsgym dir and change the file __init__.py at line 377 to "return StepResult(observation, float(reward[0]), False, {})"
+
 Attention that there is no snakemake or similar, so it must be compiled using omnet IDE for now.
