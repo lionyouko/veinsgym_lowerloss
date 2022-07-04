@@ -28,4 +28,6 @@ Now it is ready to be used by AI Agent.
 
 You may want to recompile/rebuild if not working with the binaries here.
 
-Attention that there is no snakemake or similar, so it must be compiled that way for now.
+You will want to run either noconnection config or MultipleGymsOne config. MultipleGyms is a postponed idea. Make sure to put 5555 port at TrivialRL if you will try General config.
+
+Attention that there is no snakemake or similar, so it must be compiled using omnet IDE for now.
