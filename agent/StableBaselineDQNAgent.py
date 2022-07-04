@@ -69,8 +69,6 @@ def main():
     check_env(env)
     logging.info("Env created")
 
-    # RSU_ID*, Task(maxDelay,NumberCycles, Size), Vehicle(Coordinates, Speed), Queues(T,N)* observation space Float32
-    # action space Discrete(2) stay with the task, or send it to another RSU, to which RSU to send
 
     model = DQN('MlpPolicy', env, verbose=1)
     model.learn(total_timesteps=2500)
@@ -94,7 +92,7 @@ def main():
             #env.render()
             
             rewards.append(reward)
-            # lion 1604022> the last action sent by omnetpp to veinsgym will be a shutdown
+            # 1604022> the last action sent by omnetpp to veinsgym will be a shutdown
             # and that will make the done set to true. In the veinsgym code that this happens, it will
             # also generates a random of the observation (_parse request function)
             # that will be sent in step function
