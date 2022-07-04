@@ -36,7 +36,7 @@ gym.register(
     kwargs={
         "scenario_dir": os.path.relpath(
             os.path.join(
-                os.path.dirname(os.path.abspath(__file__)), "..", "lowerloss"
+                os.path.dirname(os.path.abspath(__file__)), "..", "properlowerloss"
             )
         ),
 
